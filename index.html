@@ -1,90 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="queries.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- contenedor general con un wd del 100% para que lo de adentro se pueda desplazar al final, en un rinconcito digamos... -->
     <header class="header">
-        <!-- dentro de este contenedor van a ir dos cajitas mas, una para la hora y clima y otra para las frases -->
-        <div class="container-informativo">
-            <!-- contenedor de la api de clima y hora -->
-            <div class="clima-hora">
+      <!-- dentro de este contenedor van a ir dos cajitas mas, una para la hora y clima y otra para las frases -->
+      <div class="container-informativo">
+        <!-- contenedor de la api de clima y hora -->
+        <!-- <div class="clima-hora">
                 <p>
                     <span class="fecha">DD/MM/AA</span>
-                    <span class="hora">HH:MM</span>
+                    <span class="hora">aca va la hora</span>
                 </p>
-            </div>
-            <!-- contenedor de api frases -->
-            <div class="container-frases">
+                <p class="clima">26° hace allá</p>
+            </div> -->
+
+        <a
+          href="https://time.is/General_San_Martín,_Buenos_Aires"
+          id="time_is_link"
+          rel="nofollow"
+          style="font-size: 15px; color: grey; background: none"
+          ></a
+        >
+        <span
+          id="_z105"
+          style="font-size: 15px; color: rgb(96, 96, 96); background: none"
+        ></span>
+        <script src="//widget.time.is/es.js"></script>
+        <script>
+          time_is_widget.init({
+            _z105: {
+              id: 'General_San_Martín__Buenos_Aires_z105',
+              template: 'TIME<br>DATE',
+              date_format: 'daynum-monthnum-year',
+            },
+          });
+        </script>
+
+        <!-- contenedor de api frases -->
+        <!-- <div class="container-frases">
                 <p class="frases">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-        </div>
+            </div> -->
+      </div>
     </header>
 
-
     <main>
-        <div class="presentacion">
+      <div class="presentacion">
         <!-- esto es la presentacion -->
-        <h1>Solange Leites Galván</h1>
-        <h2>Portfolio</h2>
+        <h1 id="name" class="animate__animated animate__fadeIn">Solange Leites Galván</h1>
 
         <span class="divider"></span>
 
         <!-- esto va a tener un efecto escritura -->
         <div class="description-personal">
-        <p>Dev Frontend</p>
-        <p>Responsive design</p>
-        <p>Design web</p>
-    </div>
+          <p class="animate__animated animate__fadeIn">Desarolladora Front-end</p>
+          <!-- <p>Responsive design</p>
+          <p>Design web</p> -->
         </div>
-        <a href="#proyectos"><i class="fa-solid fa-angles-down down"></i></a>
+      </div>
+      <a href="#proyectos"><i class="fa-solid fa-angles-down down"></i></a>
 
-        <!-- Esta va a ser una section con una lista (tipo linkthree) que va a tener los links a mis proyectos  -->
-        <section id="proyectos">
-            <div class="links">
-                <a href="https://landingpage-green-ten.vercel.app/" target="_blank" class="title">Camping South - Landing page (HTML y CSS)</a>
-                <p class="description">Flex-box; Flex-grid; Formularios; Login- Sign in; Responsive Design</p>
-                <button class="show-more" data-showing="'false">Ver más</button>
-            </div>
-            <!-- !-------------------------------------------------- -->
-            <div class="links">
-                <a href="https://integrador-javascript-five.vercel.app/" target="_blank" class="title">C'offee - E-commerce (HTML, CSS y JavaScript)</a>
-                <p class="description">Responsive design; Filtrado por categorias de productos; Validación de formulario; Carrito de compras funcional.</p>
-                <button class="show-more" data-showing="false">Ver más</button>
-            </div>
-            <!-- !-------------------------------------------------- -->
+      <!-- Esta va a ser una section con una lista (tipo linkthree) que va a tener los links a mis proyectos  -->
+      <section id="proyectos">
+        <div class="links">
+          <a
+            href="https://landingpage-green-ten.vercel.app/"
+            target="_blank"
+            class="title"
+            >Camping South - Landing page (HTML y CSS)</a
+          >
+          <p class="description">
+            Esta fué mi primer landing page con login y sign up que la realicé utilizand HTML y CSS. En CSS utilice las herramientas de flex-grid, formularios y la hice responsive design para todos los dispositivos.
+          </p>
+          <button class="show-more cascada data-showing="'false">Ver más</button>
+        </div>
+        <!-- !-------------------------------------------------- -->
+        <div class="links">
+          <a
+            href="https://integrador-javascript-five.vercel.app/"
+            target="_blank"
+            class="title"
+            >C'offee - E-commerce (HTML, CSS y JavaScript)</a
+          >
+          <p class="description">
+            Esta landing page es un e-commerse que fue hecha con HTML, CSS y JavaScript.
+            Con JavaScript realicé el renderizado por categorias de los productos, el carrito de compras funcional y también realicé la validación del formulario.
+          </p>
+          <button class="show-more cascada" data-showing="false">Ver más</button>
+        </div>
+        <!-- !-------------------------------------------------- -->
+        <div class="links">
+            <a
+              href="https://e2javascript.vercel.app/"
+              target="_blank"
+              class="title"
+              >Buscador de pizzas - Buscador (HTML, CSS y JavaScript)</a
+            >
+            <p class="description">
+              Esta es una entrega que realice para el bootcamp de NUCBA. La consigna consistia en crear un array de seis productos, renderizarlos y que aparezca su imagen. Esto tenia como fin aprender el manejo de los elementos del DOM.
+            </p>
+            <button class="show-more cascada" data-showing="false">Ver más</button>
+          </div>
+        
+        <!-- !-------------------------------------------------- -->
 
-            <div class="links">
-                <a href="https://e4javascript.vercel.app/" target="_blank" class="title">Buscador de Pokemones - Buscador (HTML, CSS y JavaScript)</a>
-                <p class="description">Responsive design; Utilización de Api; Renderización de cards a traves de JS</p>
-                <button class="show-more" data-showing="false">Ver más</button>
-            </div>
-            <!-- !-------------------------------------------------- -->
+        <div class="links">
+            <a
+              href="https://e1-react-mejorada.vercel.app/"
+              target="_blank"
+              class="title"
+              >To Do List App (React)</a
+            >
+            <p class="description">
+              Esta es mi primer proyecto con React. Acá demuestro el manejo de componentes, estilos globales y la utilización de los hooks.
+            </p>
+            <button class="show-more cascada" data-showing="false">Ver más</button>
+          </div>
+      </section>
+      <footer>
+        <a href="./cv/Solange Leites CV Diciembre.pdf" download=""
+          >Descargar CV</a
+        >
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
 
-            <div class="links">
-                <a href="https://e3javascript.vercel.app/" target="_blank" class="title">Buscador de pizzas - Buscador (HTML, CSS y JavaScript)</a>
-                <p class="description">Aca la función era crear un array, buscar una pizza por numero de ID y renderizar la card de la pizza utilizada</p>
-                <button class="show-more" data-showing="false">Ver más</button>
-            </div>
-        </section>
-        <footer>
-            <a href="./cv/Solange Leites CV Diciembre.pdf" download="">Descargar CV</a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
 
-            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://wa.me/541124614480" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
 
-            <a href="https://wa.me/541124614480" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-
-            <a href="https://www.github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </footer>
-        <script src="main.js"></script>
+        <a href="https://www.github.com/" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </footer>
     </main>
-</body>
+    <script src="main.js" defer></script>
+    <script src="https://time.is/embed.js"></script>
+  </body>
 </html>
