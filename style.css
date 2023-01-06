@@ -105,7 +105,7 @@ main {
   padding: 50px;
 }
 .links {
-  border: 2px solid var(--pink);
+  border: 2px solid grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,13 +119,16 @@ main {
 .links:hover {
   transform: scale(1.05);
   transition: all 0.7s ease;
+  background: grey;
 }
 .title {
   font-size: var(--grande);
   font-weight: 700;
+  background:none;
 }
 .title:hover {
   color: var(--pink);
+  background:none;
 }
 .description {
   font-size: 1.05rem;
@@ -133,16 +136,20 @@ main {
   width: 600px;
   text-align: center;
   font-weight: 400;
+  background:none;
 }
 .show-more {
   font-size: 0.9rem;
   padding: 0.5rem;
   border-radius: 5px;
   cursor: pointer;
-  border: 2px solid var(--pink);
+  border: 1px solid var(--blanco);
+  background:none;
+  outline: none;
 }
 .show-more:hover {
-  background: var(--pink);
+  border: 1px solid var(--pink);
+  background:var(--pink)
 }
 
 .img {
@@ -157,3 +164,7 @@ footer {
   height: 50px;
   font-weight: 700;
 }
+.icon:hover, .cv:hover {
+  color:var(--pink);
+}
+

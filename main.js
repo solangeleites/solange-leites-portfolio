@@ -4,7 +4,6 @@ const $hour = document.getElementsByClassName('hora');
 const $fecha = document.getElementsByClassName('fecha');
 const $clima = document.getElementsByClassName('clima');
 const $name = document.getElementById('name');
-console.log($name);
 
 //* Funcion para mostrar y ocultar la descripcion de cada item
 const showMoreAndLess = (event, index) => {
@@ -20,16 +19,6 @@ const showMoreAndLess = (event, index) => {
     $button.textContent = 'Ver más';
     $description.style.display = 'none';
   }
-};
-
-const effectFall = () => {
-  if($showMoreButtons.classlist.contains("cascada")){
-    $showMoreButtons.classList.remove("cascada");
-    $showMoreButtons.style.height = "auto";
-} else {
-    $showMoreButtons.classList.add("cascada");
-    $showMoreButtons.style.height = "0";
-}
 };
 
 
@@ -86,7 +75,6 @@ const init = () => {
       showMoreAndLess(event, i)
     );
   }
-  window.addEventListener('load', writeText);
 };
 
 init();

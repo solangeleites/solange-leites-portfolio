@@ -1,3 +1,15 @@
+@media (max-width: 576px){
+#name{
+    font-size: 3rem;
+}
+.description{
+    max-width: 330px;
+}
+
+#proyectos{
+    padding: 0;
+}
+
 @media (max-width: 768px){
     .header{
         align-items: center;
