@@ -25,35 +25,10 @@
       <!-- dentro de este contenedor van a ir dos cajitas mas, una para la hora y clima y otra para las frases -->
       <div class="container-informativo">
         <!-- contenedor de la api de clima y hora -->
-        <!-- <div class="clima-hora">
-                <p>
-                    <span class="fecha">DD/MM/AA</span>
-                    <span class="hora">aca va la hora</span>
-                </p>
-                <p class="clima">26° hace allá</p>
-            </div> -->
+        <div class="clima-hora" id="clima">
+                <!-- <p class="clima">26°</p> -->
+            </div>
 
-        <a
-          href="https://time.is/General_San_Martín,_Buenos_Aires"
-          id="time_is_link"
-          rel="nofollow"
-          style="font-size: 15px; color: grey; background: none"
-          ></a
-        >
-        <span
-          id="_z105"
-          style="font-size: 15px; color: rgb(96, 96, 96); background: none"
-        ></span>
-        <script src="//widget.time.is/es.js"></script>
-        <script>
-          time_is_widget.init({
-            _z105: {
-              id: 'General_San_Martín__Buenos_Aires_z105',
-              template: 'TIME<br>DATE',
-              date_format: 'daynum-monthnum-year',
-            },
-          });
-        </script>
 
         <!-- contenedor de api frases -->
         <!-- <div class="container-frases">
@@ -72,6 +47,7 @@
         <!-- esto va a tener un efecto escritura -->
         <div class="description-personal">
           <p class="animate__animated animate__fadeIn">Desarolladora Front-end</p>
+          <span>Portofolio en construcción <i class="fa-solid fa-screwdriver-wrench"></i></span>
           <!-- <p>Responsive design</p>
           <p>Design web</p> -->
         </div>
@@ -152,7 +128,7 @@
         ></a>
       </footer>
     </main>
+    <script src="request.js"></script>
     <script src="main.js" defer></script>
-    <script src="https://time.is/embed.js"></script>
   </body>
 </html>

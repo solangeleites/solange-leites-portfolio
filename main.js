@@ -2,8 +2,22 @@ const $showMoreButtons = document.getElementsByClassName('show-more');
 const $descriptions = document.getElementsByClassName('description');
 const $hour = document.getElementsByClassName('hora');
 const $fecha = document.getElementsByClassName('fecha');
-const $clima = document.getElementsByClassName('clima');
 const $name = document.getElementById('name');
+const $clima = document.getElementById('clima');
+
+fetch('https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires,%20Argentina&appid=9a0d87730cc4cbadcd498be668e87335')
+  .then(response => response.json())
+  .then(data => {
+    const temperature = data.main.temp - 273.15;
+    const name = data.name;
+    console.log(`La temperatura actual en ${name} es de ${convertCelcius(temperature)}°.`);  });
+
+  const convertCelcius = kelvin => {
+    let celsius = Math.round(kelvin - 0);
+    return celsius;
+  }
+
+
 
 //* Funcion para mostrar y ocultar la descripcion de cada item
 const showMoreAndLess = (event, index) => {
@@ -39,33 +53,7 @@ const showMoreAndLess = (event, index) => {
 //   $hour.textContent = `${hours}:${minutes}:${seconds}`;
 // };
 
-// const updateDate = () => {
-//   const currentDate = new Date();
-//   const day = currentDate.getDate();
-//   const month = currentDate.getMonth();
-//   const year = currentDate.getFullYear();
 
-//   $fecha.textContent = `${day} / ${month + 1} / ${year}`;
-// };
-// setInterval(() =>{
-//   updateClock();
-//   updateDate();
-// },1000)
-
-
-// *Funcion efecto type
-// const writeText = () => {
-//   const text = document.getElementById("text");
-//   const textContent = text.textContent;
-//   let i = 0;
-//   const interval = setInterval(() => {
-//     text.textContent = textContent.substring(0, i+1);
-//     i++;
-//     if (i >= textContent.length) {
-//       clearInterval(interval);
-//     }
-//   }, 1000);
-// }
 
 
 
