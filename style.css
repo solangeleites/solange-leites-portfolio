@@ -34,9 +34,10 @@ header {
   align-items: center;
   margin-right: 10px;
 }
-.clima-hora{
-  border: 1px solid grey;
-  padding: 10px 60px;
+
+.clima{
+  font-size: 12px;
+  color: var(--gris);
 }
 .fecha,
 .hora,
@@ -44,7 +45,9 @@ header {
   font-size: 1rem;
   color: var(--gris);
 }
-
+.grey{
+  color: var(--gris);
+}
 .frases {
   font-style: italic;
   font-size: 0.9rem;
@@ -71,6 +74,7 @@ main {
 .description-personal > p {
   font-size: 1.5rem;
   font-weight: 200;
+  text-align: center;
 }
 .divider {
   height: 1.5px;
