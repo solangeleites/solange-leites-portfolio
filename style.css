@@ -10,6 +10,7 @@
   color: #e3e3e3;
 }
 :root {
+  --gris-light:#9d9d9dd2;
   --gris: #585858d2;
   --negro: #161616;
   --blanco: #e6e6e6;
@@ -35,15 +36,9 @@ header {
   margin-right: 10px;
 }
 
-.clima{
-  font-size: 12px;
-  color: var(--gris);
-}
-.fecha,
-.hora,
-.frases {
-  font-size: 1rem;
-  color: var(--gris);
+#clima{
+  font-size: 14px;
+  color: var(--gris-light);
 }
 .grey{
   color: var(--gris);
@@ -88,7 +83,7 @@ main {
 }
 .down {
   font-size: 45px;
-  animation: moving 1.25s infinite;
+  animation: moving 1s infinite;
   background: none;
   padding: 17px;
 }
