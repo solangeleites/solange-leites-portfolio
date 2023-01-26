@@ -6,8 +6,15 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  background: #161616;
-  color: #e3e3e3;
+  color: #000000;
+}
+body{
+  background: #659999;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #d48852, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #67584d, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+
 }
 :root {
   --gris-light:#9d9d9dd2;
@@ -38,10 +45,10 @@ header {
 
 #clima{
   font-size: 14px;
-  color: var(--gris-light);
+  color: #b5cdbfb0;
 }
 .grey{
-  color: var(--gris);
+  color: #b5cdbf6c;
 }
 .frases {
   font-style: italic;
@@ -65,11 +72,21 @@ main {
   font-size: 6rem;
   font-weight: 300;
   text-align: center;
+  font-size: 72px;  
+  background: -webkit-linear-gradient( top, rgb(208, 123, 123), rgb(219, 67, 246));
+  background: linear-gradient(to  bottom, rgba(211, 41, 149, 0.827), rgba(6, 79, 56, 0.722));
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;  
+}   
+
+  
 }
 .description-personal > p {
   font-size: 1.5rem;
   font-weight: 200;
   text-align: center;
+  color: pink;
+  
 }
 .divider {
   height: 1.5px;
@@ -126,7 +143,7 @@ main {
 }
 .title {
   font-size: var(--grande);
-  font-weight: 700;
+  font-weight: 500;
   background:none;
 }
 .title:hover {

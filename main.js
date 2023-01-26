@@ -9,7 +9,8 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires,%20Argen
     const temperature = data.main.temp - 273.15;
     const name = data.name;
     const icon = data.weather.icon;
-    $clima.innerHTML = `La temperatura actual en ${name} es de ${convertCelcius(temperature)}°.`;
+    $clima.innerHTML = `La temperatura actual en ${name} es de ${convertCelcius(temperature)}°
+    .`;
   });
 
 
